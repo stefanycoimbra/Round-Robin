@@ -8,13 +8,7 @@ typedef struct {
     int criacao, duracao, prioridade;
 }processo;
 
-typedef struct {
-    char* proc1[2], proc2[2], proc3[2], proc4[2];
-}diag_exec;
-
 processo *vet;
-
-diag_exec *diag_proc;
 
 int n, cont_saida = 0;
 int conta_proc = 0, total_time = 0;
