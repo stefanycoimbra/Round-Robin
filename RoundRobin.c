@@ -143,8 +143,6 @@ void roundrobin() {
     // Para cada processo da fila
     for(total_time = 0, i = 0; max_proc != 0;)
     {
-        //registra qual processo está sendo executado em cada instante
-        order_process[time++] = i;
 
         // Se a duração não for nula ou, por proteção da entrada, negativa,
         // e se a duração do processo for menor ou igual ao quantum determinado
@@ -156,6 +154,8 @@ void roundrobin() {
             total_time = total_time + burst_time[i];
             burst_time[i] = 0;
             terminado = 1;
+            //registra qual processo está sendo executado em cada instante
+            order_process[time++] = i;
         }
 
         // Se a duração do processo for maior que o quantum
@@ -165,6 +165,9 @@ void roundrobin() {
             // executado depois, com o processo jogado para o final da fila
             burst_time[i] = burst_time[i] - quantum;
             total_time = total_time + quantum;
+            //registra qual processo está sendo executado em cada instante
+            for(j = 0;  j < quantum; j++)
+                order_process[time++] = i;
         }
 
         // Se a duração para o processo chegou a zero e se o contador é igual a 1,
