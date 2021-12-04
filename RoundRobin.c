@@ -150,12 +150,14 @@ void roundrobin() {
         {
             // O tempo total para a execução do processo é igual ao tempo
             // que se passou de outros processos anteriores + sua própria duração
-
+            
+            //registra qual processo está sendo executado em cada instante
+	        for(j = 0;  j < burst_time[i]; j++)
+                order_process[time++] = i;
+            
             total_time = total_time + burst_time[i];
             burst_time[i] = 0;
             terminado = 1;
-            //registra qual processo está sendo executado em cada instante
-            order_process[time++] = i;
         }
 
         // Se a duração do processo for maior que o quantum
@@ -201,8 +203,6 @@ void roundrobin() {
         if(i == (conta_proc - 1))
         {
             i = 0;
-            if(quantum != 1)
-                order_process[time++] = i;
         }
 
         // Se o tempo de chegada do próximo processo for menor que o tempo total,
