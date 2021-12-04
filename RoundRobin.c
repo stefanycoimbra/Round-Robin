@@ -120,7 +120,7 @@ void saida() {
 void roundrobin() {
 
     // Variáveis:
-    // i -> para o loop for;
+    // i & j -> para o loop for;
     // time -> instante de tempo;
     // max_proc -> guarda o número máximo de processos;
     // terminado -> flag que indica se o processo foi completamente executado;
@@ -130,15 +130,20 @@ void roundrobin() {
 
     int i, j, max_proc, terminado = 0, quantum;
     int wait_time = 0, life_time = 0;
+    int total_burst = 0;
 
     max_proc = conta_proc;
-    quantum = 1;
+    quantum = 3;
 
     // Aloca espaço para guardar os tempos totais, de espera e de vida dos processos, respectivamente
     total_tp = (int *) malloc(n*sizeof(int));
     wait_tp = (int *) malloc(n*sizeof(int));
     life_tp = (int *) malloc(n*sizeof(int));
-    order_process = (int *) malloc(10*n*sizeof(int));
+
+    //Aloca espaço para armazenar a ordem de exucução dos processos
+    for(i = 0; i < conta_proc; i++)
+	total_burst += burst_time[i];
+    order_process = (int *) malloc(total_burst*sizeof(int));
 
     // Para cada processo da fila
     for(total_time = 0, i = 0; max_proc != 0;)
