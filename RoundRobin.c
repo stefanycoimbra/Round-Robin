@@ -152,8 +152,8 @@ void roundrobin() {
             // que se passou de outros processos anteriores + sua própria duração
             
             //registra qual processo está sendo executado em cada instante
-	        for(j = 0;  j < burst_time[i]; j++)
-                order_process[time++] = i;
+	    for(j = 0;  j < burst_time[i]; j++)
+            	order_process[time++] = i;
             
             total_time = total_time + burst_time[i];
             burst_time[i] = 0;
