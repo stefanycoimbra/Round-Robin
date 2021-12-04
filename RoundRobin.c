@@ -180,10 +180,8 @@ void roundrobin() {
 
             // O tempo de espera conta o tempo total e tira dele
             // o tempo de chegada dele na fila e sua duração
-            //printf("(%d+%d)-%d-%d",wait_time, total_time, arrival_time[i],vet[i].duracao);
             wait_time = wait_time + total_time - arrival_time[i] - vet[i].duracao;
-            //printf("=%d\n",wait_time);
-
+            
             // O tempo de vida conta o tempo total e tira dele
             // o tempo de chegada dele na fila
             life_time = life_time + total_time - arrival_time[i];
@@ -203,6 +201,8 @@ void roundrobin() {
         if(i == (conta_proc - 1))
         {
             i = 0;
+            if(quantum != 1)
+                order_process[time++] = i;
         }
 
         // Se o tempo de chegada do próximo processo for menor que o tempo total,
