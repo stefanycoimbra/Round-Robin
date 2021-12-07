@@ -87,12 +87,17 @@ void saida() {
         for(i = 0; i < time; i++)
         {
             fprintf(arq, "%d-%d \t ",i,i+1);
-            for (j = 0; j < conta_proc; j++)
+	    for (j = 0; j < conta_proc; j++)
             {
                 if(order_process[i] == j)
                     fprintf(arq, "## \t");
                 else
+                {
+                  if(total_tp[j] > i && arrival_time[j] <= i)
                     fprintf(arq, "-- \t");
+                  else
+                    fprintf(arq, "   \t");
+                }
             }
             fprintf(arq, "\n");
         }
