@@ -76,10 +76,10 @@ void saida() {
     else{
         // Armazena os valores no arquivo de texto e também imprime na tela
 
-        fprintf(arq,"Tempo \t");
+        fprintf(arq,"Tempo\t ");
         for (i = 0; i < conta_proc; i++)
         {
-            fprintf(arq, " P%d \t",i+1);
+            fprintf(arq, "P%d \t",i+1);
         }
 
         fprintf(arq, "\n");
