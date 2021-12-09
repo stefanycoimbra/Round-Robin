@@ -1,9 +1,9 @@
-# Round-Robin Scaling Algorithm Implementation
+# <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/30/000000/external-archery-sport-avatar-justicon-lineal-color-justicon.png"/> Round-Robin Scaling Algorithm Implementation
 
 ## <img src="https://img.icons8.com/color/30/000000/task--v1.png"/> What is Scaling?
 Scaling is a way to administrate all the processes in the CPU. It controlls the change between the execution of the processes.
 
-## Scheduling Criteria
+## <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/30/000000/external-clipboard-advertising-kiranshastry-lineal-color-kiranshastry.png"/> Scheduling Criteria
 * Burst Time: Quantity of the duration needed for a process.
 * Turn Around Time: Interval that the process arrived and it was concluded.
 * Waiting Time: Time that the process is in the ready state.
@@ -11,10 +11,10 @@ Scaling is a way to administrate all the processes in the CPU. It controlls the 
 * Average Turn Around Time: is the average turn around time of the algorithm.
 * Average Waiting Time: is the average waiting time of the algorithm.
 
-## What is Round-Robin?
+## <img src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/30/000000/external-archery-sport-wanicon-lineal-color-wanicon.png"/> What is Round-Robin?
 Round-Robin is a scheduling algorithm that consists of dividing the CPU usage time (Central Processing Unit). Each process receives a time slice, this time is called Quantum. The processes are all stored in circular Queue (Buffer).
 
-## How can I run the code?
+## <img src="https://img.icons8.com/color/30/000000/run-command.png"/> How can I run the code?
 ```
 - First, you can download all the files, except by the .pdf;
 - Then, you can compile the file RoundRobin.c;
@@ -22,7 +22,7 @@ Round-Robin is a scheduling algorithm that consists of dividing the CPU usage ti
 - You can always modify the file dados.txt with your own data and the algorithm will generate the saida.txt;
 ```
 
-## The input
+## <img src="https://img.icons8.com/cotton/30/000000/file-arrow.png"/> The input
 The format of the input follow the pattern:
 
 ```
@@ -34,7 +34,7 @@ The format of the input follow the pattern:
 
 The fisrt column refers to the arrival time of each process, the second one the duration of each one and the last column rfers to the priority.
 
-## The output
+## <img src="https://img.icons8.com/external-tal-revivo-duo-tal-revivo/30/000000/external-monochrome-laser-printer-for-fast-printing-solution-basic-duo-tal-revivo.png"/> The output
 An example of an output:
 
 ```
@@ -80,7 +80,7 @@ Tempo medio de espera:	7.25
 
 The fisrt line refers to the Quantum used, then we have a legend of the execution diagram, the proper one and we also have a table with each process and their burst time, turn around time and waiting time. The average turn around time and average waiting time are on the bottom ("Tempo médio de vida" e "Tempo médio de espera").
 
-## Developers
+## <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/30/000000/external-developer-coding-kiranshastry-lineal-color-kiranshastry-1.png"/> Developers
 * Camila Motta Renó (<img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/> https://github.com/kcami)
 * Stéfany Coura Coimbra (<img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/> https://github.com/stefanycoimbra)
 * Ytalo Ysmaicon Gomes (<img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/> https://github.com/ysmaicon)
