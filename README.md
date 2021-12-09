@@ -1,6 +1,6 @@
 # Round-Robin Scaling Algorithm Implementation
 
-## <img src="https://img.icons8.com/color/100/000000/task--v1.png"/> What is Scaling?
+## <img src="https://img.icons8.com/color/30/000000/task--v1.png"/> What is Scaling?
 Scaling is a way to administrate all the processes in the CPU. It controlls the change between the execution of the processes.
 
 ## Scheduling Criteria
