@@ -69,10 +69,10 @@ Tempo	 P1 	P2 	P3 	P4
 17-18 	    	   	   	## 	
 
 ID do processo 		 Tempo de Duracao 		 Tempo de Vida 		 Tempo de Espera  
-Processo [1] 				      8 				           17 				        9
-Processo [2] 				      5 				           14 			       	  9
-Processo [3] 				      1 				            4 				        3
-Processo [4] 				      4 				           12 				        8      
+Processo [1] 				 8 				 17 				 9
+Processo [2] 				 5 				 14 				 9
+Processo [3] 				 1 				 4 				 3
+Processo [4] 				 4 				 12 				 8      
 
 Tempo medio de vida:	11.75
 Tempo medio de espera:	7.25
