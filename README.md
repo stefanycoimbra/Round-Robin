@@ -78,7 +78,7 @@ Tempo medio de vida:	11.75
 Tempo medio de espera:	7.25
 ```
 
-The fisrt line refers to the Quantum used, then we have a legend of the execution diagram, the proper one and we also have a table with each process and their burst time, turn around time and waiting time. The average turn around time and average waiting time are on the bottom ("Tempo médio de vida" e "Tempo médio de espera").
+The first line refers to the Quantum used, then we have a legend of the execution diagram, the proper one and we also have a table with each process and their burst time, turn around time and waiting time. The average turn around time and average waiting time are on the bottom ("Tempo médio de vida" e "Tempo médio de espera").
 
 ## <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/30/000000/external-developer-coding-kiranshastry-lineal-color-kiranshastry-1.png"/> Developers
 * Camila Motta Renó (<img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/> https://github.com/kcami)
