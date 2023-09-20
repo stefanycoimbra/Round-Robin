@@ -32,7 +32,7 @@ The format of the input follow the pattern:
 6 4 1
 ```
 
-The fisrt column refers to the arrival time of each process, the second one the duration of each one and the last column rfers to the priority.
+The first column refers to the arrival time of each process, the second one the duration of each one and the last column rfers to the priority.
 
 ## <img src="https://img.icons8.com/external-tal-revivo-duo-tal-revivo/30/000000/external-monochrome-laser-printer-for-fast-printing-solution-basic-duo-tal-revivo.png"/> The output
 An example of an output:
